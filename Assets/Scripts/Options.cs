@@ -13,4 +13,5 @@ public static class Options
     public static List<int> LevelTypes = new List<int> { };
     public static List<Vector3> LevelVecs = new List<Vector3> { };
     public static string LeftOff = "Level 1";
+    public static bool CroshairEnabled = true;
 }

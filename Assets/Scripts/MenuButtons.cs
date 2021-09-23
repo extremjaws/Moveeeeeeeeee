@@ -71,6 +71,10 @@ public class MenuButtons : MonoBehaviour
         bool gm = GMode.isOn;
         Options.gamermode = gm;
     }
+    public void SetCroshair()
+    {
+        Options.
+    }
 
     public void SetTimer()
     {
