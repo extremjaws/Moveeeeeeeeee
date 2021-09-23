@@ -197,6 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ab7bf39c358c8418a671200312bd9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  croshairImage: {fileID: 1374386601938027915}
 --- !u!1 &1895634520036665745
 GameObject:
   m_ObjectHideFlags: 0

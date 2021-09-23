@@ -14,6 +14,7 @@ public class MenuButtons : MonoBehaviour
     [SerializeField] private Toggle GMode;
     [SerializeField] private TMP_Dropdown timer;
     [SerializeField] private TMP_Dropdown mode;
+    [SerializeField] private Toggle Croshair;
 
     private void Start()
     {
@@ -73,7 +74,7 @@ public class MenuButtons : MonoBehaviour
     }
     public void SetCroshair()
     {
-        Options.
+        Options.CroshairEnabled = Croshair.isOn;
     }
 
     public void SetTimer()
