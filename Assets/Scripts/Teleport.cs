@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Teleport : MonoBehaviour
 {
     public string LevelToLoad;
+    public GameObject carrot;
     private void OnTriggerEnter(Collider other)
     {
         if (Options.timer == 2)
@@ -15,6 +16,13 @@ public class Teleport : MonoBehaviour
             Options.time = 0;
         }
         Options.LeftOff = LevelToLoad.ToString();
+        carrot.GetComponent<Animation>().enabled = false;
+        carrot.GetComponent<Rigidbody>().useGravity = true;
+        Invoke("LoadNextLevel", 5);
+        
+    }
+    private void LoadNextLevel()
+    {
         SceneManager.LoadScene(LevelToLoad);
     }
 }
