@@ -694,6 +694,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0745d0024412ba4e8c2f8b634fe25a5, type: 3}
+--- !u!1 &385903501 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5758161562135566836, guid: d0745d0024412ba4e8c2f8b634fe25a5, type: 3}
+  m_PrefabInstance: {fileID: 385903500}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &417786370
 GameObject:
   m_ObjectHideFlags: 0
@@ -4781,6 +4786,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelToLoad: Level 6
   carrot: {fileID: 270723618}
+  target: {fileID: 385903501}
+  comeAnimation: {fileID: 7400000, guid: b1a780ea3fafac940855f244fe6b0bb2, type: 2}
 --- !u!64 &1067313143
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7156,7 +7163,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh46166
+  m_Name: pb_Mesh42686
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

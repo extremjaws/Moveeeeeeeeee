@@ -7,6 +7,29 @@ public class Teleport : MonoBehaviour
 {
     public string LevelToLoad;
     public GameObject carrot;
+    public GameObject target;
+    public AnimationClip comeAnimation;
+    private bool collected = false;
+    private Animation animation;
+
+    private void Start()
+    {
+        animation = carrot.GetComponent<Animation>();
+    }
+
+    private void Update()
+    {
+        if (collected)
+        {
+            carrot.transform.position = Vector3.Lerp(carrot.transform.position, target.transform.position, 0.8f * Time.deltaTime);
+            if (Vector3.Distance(carrot.transform.position, target.transform.position) <= 0.5f)
+            {
+                carrot.SetActive(false);
+            }
+        }
+            
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (Options.timer == 2)
@@ -16,9 +39,10 @@ public class Teleport : MonoBehaviour
             Options.time = 0;
         }
         Options.LeftOff = LevelToLoad.ToString();
-        carrot.GetComponent<Animation>().enabled = false;
-        carrot.GetComponent<Rigidbody>().useGravity = true;
-        carrot.GetComponent<Rigidbody>().AddForce(2, 0, 0, ForceMode.Impulse);
+        animation.Stop();
+        collected = true;
+        animation.clip = comeAnimation;
+        animation.Play();
         Invoke("LoadNextLevel", 4);
         
     }

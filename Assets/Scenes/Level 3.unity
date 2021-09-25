@@ -1943,6 +1943,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &424953718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5758161562135566836, guid: d0745d0024412ba4e8c2f8b634fe25a5, type: 3}
+  m_PrefabInstance: {fileID: 303618865193710713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &463148927
 GameObject:
   m_ObjectHideFlags: 0
@@ -3216,7 +3221,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh40490
+  m_Name: pb_Mesh38160
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7014,6 +7019,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LevelToLoad: Level 4
   carrot: {fileID: 1219777038}
+  target: {fileID: 424953718}
+  comeAnimation: {fileID: 7400000, guid: b1a780ea3fafac940855f244fe6b0bb2, type: 2}
 --- !u!64 &1443655761
 MeshCollider:
   m_ObjectHideFlags: 0

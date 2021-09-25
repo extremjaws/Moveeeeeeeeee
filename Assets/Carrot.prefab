@@ -56,7 +56,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 700005360205151959}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 1.0721803
   m_Height: 5.9506702
   m_Direction: 1
@@ -73,6 +73,7 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 5fb154599bfcff8499ebb8d1a482b1bf, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 5fb154599bfcff8499ebb8d1a482b1bf, type: 2}
+  - {fileID: 7400000, guid: b1a780ea3fafac940855f244fe6b0bb2, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -141,6 +142,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7601226680800833775, guid: c9651799e84dd324ca88d1656f0fa015, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7601226680800833775, guid: c9651799e84dd324ca88d1656f0fa015, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 692e230a598ab9f44916b5798138be02, type: 2}
@@ -149,9 +154,17 @@ PrefabInstance:
       value: Carrot
       objectReference: {fileID: 0}
     - target: {fileID: 1541998606474349963, guid: c9651799e84dd324ca88d1656f0fa015, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1541998606474349963, guid: c9651799e84dd324ca88d1656f0fa015, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 692e230a598ab9f44916b5798138be02, type: 2}
+    - target: {fileID: 7202271454713460447, guid: c9651799e84dd324ca88d1656f0fa015, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7202271454713460447, guid: c9651799e84dd324ca88d1656f0fa015, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
